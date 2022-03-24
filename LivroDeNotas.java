@@ -3,13 +3,22 @@ public class LivroDeNotas{
     //instância é sinonimo de objeto 
 
     //opera sobre uma instância 
-    String nomeDoCurso;
+    // private = deixa a classe privada 
+    private String nomeDoCurso;
+
+    public String getnomeDoCurso(){
+        return nomeDoCurso;
+    }
+
+    public void setnomeDoCurso(String nomeDoCurso){
+        this.nomeDoCurso = nomeDoCurso;
+    }
 
     //contrutor
-    public LivroDeNotas(String nomeDoCurso){
+    // public LivroDeNotas(String nomeDoCurso){
     // operador de auto referencia, se refere ao nome do curso do construtor
-    this.nomeDoCurso = nomeDoCurso;
-    }
+    // this.nomeDoCurso = nomeDoCurso;;
+    //  }
 
     public void exibirMensagem(){
         System.out.printf("Bem vindo ao livro de notas!", nomeDoCurso);
